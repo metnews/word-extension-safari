@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFA2637528F8191C0038BE19 /* icons_active in Resources */ = {isa = PBXBuildFile; fileRef = DFA2636D28F8191C0038BE19 /* icons_active */; };
+		DFA2637628F8191C0038BE19 /* icons_normal in Resources */ = {isa = PBXBuildFile; fileRef = DFA2636E28F8191C0038BE19 /* icons_normal */; };
+		DFA2637728F8191C0038BE19 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = DFA2636F28F8191C0038BE19 /* manifest.json */; };
+		DFA2637828F8191C0038BE19 /* content_scripts in Resources */ = {isa = PBXBuildFile; fileRef = DFA2637028F8191C0038BE19 /* content_scripts */; };
+		DFA2637928F8191C0038BE19 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = DFA2637128F8191C0038BE19 /* icons */; };
+		DFA2637A28F8191C0038BE19 /* config.ts in Resources */ = {isa = PBXBuildFile; fileRef = DFA2637228F8191C0038BE19 /* config.ts */; };
+		DFA2637B28F8191C0038BE19 /* background_scripts in Resources */ = {isa = PBXBuildFile; fileRef = DFA2637328F8191C0038BE19 /* background_scripts */; };
+		DFA2637C28F8191C0038BE19 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = DFA2637428F8191C0038BE19 /* dist */; };
+		DFB5E7E3285341630089862B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB5E7E2285341630089862B /* AppDelegate.swift */; };
+		DFB5E7E7285341630089862B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = DFB5E7E5285341630089862B /* Main.html */; };
+		DFB5E7E9285341630089862B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB5E7E8285341630089862B /* Icon.png */; };
+		DFB5E7EB285341630089862B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = DFB5E7EA285341630089862B /* Style.css */; };
+		DFB5E7ED285341630089862B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = DFB5E7EC285341630089862B /* Script.js */; };
+		DFB5E7EF285341630089862B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB5E7EE285341630089862B /* ViewController.swift */; };
+		DFB5E7F2285341630089862B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB5E7F0285341630089862B /* Main.storyboard */; };
+		DFB5E7F4285341640089862B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB5E7F3285341640089862B /* Assets.xcassets */; };
+		DFB5E7FD285341640089862B /* MetWord.extension Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFB5E7FC285341640089862B /* MetWord.extension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFB5E802285341640089862B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB5E801285341640089862B /* SafariWebExtensionHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFB5E7FE285341640089862B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB5E7D7285341630089862B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB5E7FB285341640089862B;
+			remoteInfo = "MetWord.extension Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFB5E80A285341640089862B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DFB5E7FD285341640089862B /* MetWord.extension Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DFA2636D28F8191C0038BE19 /* icons_active */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons_active; path = "../../word-extension/src/icons_active"; sourceTree = "<group>"; };
+		DFA2636E28F8191C0038BE19 /* icons_normal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons_normal; path = "../../word-extension/src/icons_normal"; sourceTree = "<group>"; };
+		DFA2636F28F8191C0038BE19 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = manifest.json; path = "../../word-extension/src/manifest.json"; sourceTree = "<group>"; };
+		DFA2637028F8191C0038BE19 /* content_scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content_scripts; path = "../../word-extension/src/content_scripts"; sourceTree = "<group>"; };
+		DFA2637128F8191C0038BE19 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = "../../word-extension/src/icons"; sourceTree = "<group>"; };
+		DFA2637228F8191C0038BE19 /* config.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = config.ts; path = "../../word-extension/src/config.ts"; sourceTree = "<group>"; };
+		DFA2637328F8191C0038BE19 /* background_scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = background_scripts; path = "../../word-extension/src/background_scripts"; sourceTree = "<group>"; };
+		DFA2637428F8191C0038BE19 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = "../../word-extension/src/dist"; sourceTree = "<group>"; };
+		DFB5E7DF285341630089862B /* MetWord.extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetWord.extension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB5E7E2285341630089862B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFB5E7E6285341630089862B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		DFB5E7E8285341630089862B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DFB5E7EA285341630089862B /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		DFB5E7EC285341630089862B /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		DFB5E7EE285341630089862B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFB5E7F1285341630089862B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFB5E7F3285341640089862B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFB5E7F5285341640089862B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB5E7F6285341640089862B /* MetWord_extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetWord_extension.entitlements; sourceTree = "<group>"; };
+		DFB5E7F7285341640089862B /* MetWord.extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetWord.extension.entitlements; sourceTree = "<group>"; };
+		DFB5E7FC285341640089862B /* MetWord.extension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MetWord.extension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB5E801285341640089862B /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		DFB5E803285341640089862B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB5E804285341640089862B /* MetWord_extension_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetWord_extension_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFB5E7DC285341630089862B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB5E7F9285341640089862B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFB5E7D6285341630089862B = {
+			isa = PBXGroup;
+			children = (
+				DFB5E7E1285341630089862B /* MetWord.extension */,
+				DFB5E800285341640089862B /* MetWord.extension Extension */,
+				DFB5E7E0285341630089862B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFB5E7E0285341630089862B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFB5E7DF285341630089862B /* MetWord.extension.app */,
+				DFB5E7FC285341640089862B /* MetWord.extension Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFB5E7E1285341630089862B /* MetWord.extension */ = {
+			isa = PBXGroup;
+			children = (
+				DFB5E7E2285341630089862B /* AppDelegate.swift */,
+				DFB5E7EE285341630089862B /* ViewController.swift */,
+				DFB5E7F0285341630089862B /* Main.storyboard */,
+				DFB5E7F3285341640089862B /* Assets.xcassets */,
+				DFB5E7F5285341640089862B /* Info.plist */,
+				DFB5E7F6285341640089862B /* MetWord_extension.entitlements */,
+				DFB5E7F7285341640089862B /* MetWord.extension.entitlements */,
+				DFB5E7E4285341630089862B /* Resources */,
+			);
+			path = MetWord.extension;
+			sourceTree = "<group>";
+		};
+		DFB5E7E4285341630089862B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFB5E7E5285341630089862B /* Main.html */,
+				DFB5E7E8285341630089862B /* Icon.png */,
+				DFB5E7EA285341630089862B /* Style.css */,
+				DFB5E7EC285341630089862B /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DFB5E800285341640089862B /* MetWord.extension Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DFB5E80E285341650089862B /* Resources */,
+				DFB5E801285341640089862B /* SafariWebExtensionHandler.swift */,
+				DFB5E803285341640089862B /* Info.plist */,
+				DFB5E804285341640089862B /* MetWord_extension_Extension.entitlements */,
+			);
+			path = "MetWord.extension Extension";
+			sourceTree = "<group>";
+		};
+		DFB5E80E285341650089862B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2637328F8191C0038BE19 /* background_scripts */,
+				DFA2637228F8191C0038BE19 /* config.ts */,
+				DFA2637028F8191C0038BE19 /* content_scripts */,
+				DFA2637428F8191C0038BE19 /* dist */,
+				DFA2637128F8191C0038BE19 /* icons */,
+				DFA2636D28F8191C0038BE19 /* icons_active */,
+				DFA2636E28F8191C0038BE19 /* icons_normal */,
+				DFA2636F28F8191C0038BE19 /* manifest.json */,
+			);
+			name = Resources;
+			path = "MetWord.extension Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFB5E7DE285341630089862B /* MetWord.extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB5E80B285341640089862B /* Build configuration list for PBXNativeTarget "MetWord.extension" */;
+			buildPhases = (
+				DFB5E7DB285341630089862B /* Sources */,
+				DFB5E7DC285341630089862B /* Frameworks */,
+				DFB5E7DD285341630089862B /* Resources */,
+				DFB5E80A285341640089862B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFB5E7FF285341640089862B /* PBXTargetDependency */,
+			);
+			name = MetWord.extension;
+			productName = MetWord.extension;
+			productReference = DFB5E7DF285341630089862B /* MetWord.extension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFB5E7FB285341640089862B /* MetWord.extension Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB5E807285341640089862B /* Build configuration list for PBXNativeTarget "MetWord.extension Extension" */;
+			buildPhases = (
+				DFB5E7F8285341640089862B /* Sources */,
+				DFB5E7F9285341640089862B /* Frameworks */,
+				DFB5E7FA285341640089862B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MetWord.extension Extension";
+			productName = "MetWord.extension Extension";
+			productReference = DFB5E7FC285341640089862B /* MetWord.extension Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFB5E7D7285341630089862B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					DFB5E7DE285341630089862B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					DFB5E7FB285341640089862B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = DFB5E7DA285341630089862B /* Build configuration list for PBXProject "MetWord.extension" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFB5E7D6285341630089862B;
+			productRefGroup = DFB5E7E0285341630089862B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFB5E7DE285341630089862B /* MetWord.extension */,
+				DFB5E7FB285341640089862B /* MetWord.extension Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFB5E7DD285341630089862B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB5E7E9285341630089862B /* Icon.png in Resources */,
+				DFB5E7F2285341630089862B /* Main.storyboard in Resources */,
+				DFB5E7ED285341630089862B /* Script.js in Resources */,
+				DFB5E7E7285341630089862B /* Main.html in Resources */,
+				DFB5E7F4285341640089862B /* Assets.xcassets in Resources */,
+				DFB5E7EB285341630089862B /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB5E7FA285341640089862B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA2637A28F8191C0038BE19 /* config.ts in Resources */,
+				DFA2637928F8191C0038BE19 /* icons in Resources */,
+				DFA2637628F8191C0038BE19 /* icons_normal in Resources */,
+				DFA2637828F8191C0038BE19 /* content_scripts in Resources */,
+				DFA2637C28F8191C0038BE19 /* dist in Resources */,
+				DFA2637528F8191C0038BE19 /* icons_active in Resources */,
+				DFA2637728F8191C0038BE19 /* manifest.json in Resources */,
+				DFA2637B28F8191C0038BE19 /* background_scripts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFB5E7DB285341630089862B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB5E7EF285341630089862B /* ViewController.swift in Sources */,
+				DFB5E7E3285341630089862B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB5E7F8285341640089862B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB5E802285341640089862B /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFB5E7FF285341640089862B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFB5E7FB285341640089862B /* MetWord.extension Extension */;
+			targetProxy = DFB5E7FE285341640089862B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFB5E7E5285341630089862B /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB5E7E6285341630089862B /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		DFB5E7F0285341630089862B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB5E7F1285341630089862B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFB5E805285341640089862B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFB5E806285341640089862B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DFB5E808285341640089862B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MetWord.extension Extension/MetWord_extension_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MetWord.extension Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "MetWord.extension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metwords.MetWord-extension.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DFB5E809285341640089862B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MetWord.extension Extension/MetWord_extension_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MetWord.extension Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "MetWord.extension Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metwords.MetWord-extension.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DFB5E80C285341640089862B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetWord.extension/MetWord.extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetWord.extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MetWord.extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metwords.MetWord-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DFB5E80D285341640089862B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetWord.extension/MetWord.extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetWord.extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MetWord.extension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metwords.MetWord-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFB5E7DA285341630089862B /* Build configuration list for PBXProject "MetWord.extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB5E805285341640089862B /* Debug */,
+				DFB5E806285341640089862B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB5E807285341640089862B /* Build configuration list for PBXNativeTarget "MetWord.extension Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB5E808285341640089862B /* Debug */,
+				DFB5E809285341640089862B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB5E80B285341640089862B /* Build configuration list for PBXNativeTarget "MetWord.extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB5E80C285341640089862B /* Debug */,
+				DFB5E80D285341640089862B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFB5E7D7285341630089862B /* Project object */;
+}
