@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF24167F28FCFA8F00AC9C87 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF24167E28FCFA8F00AC9C87 /* README.md */; };
 		DFA2637528F8191C0038BE19 /* icons_active in Resources */ = {isa = PBXBuildFile; fileRef = DFA2636D28F8191C0038BE19 /* icons_active */; };
 		DFA2637628F8191C0038BE19 /* icons_normal in Resources */ = {isa = PBXBuildFile; fileRef = DFA2636E28F8191C0038BE19 /* icons_normal */; };
 		DFA2637728F8191C0038BE19 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = DFA2636F28F8191C0038BE19 /* manifest.json */; };
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DF24167E28FCFA8F00AC9C87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DFA2636D28F8191C0038BE19 /* icons_active */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons_active; path = "../../word-extension/src/icons_active"; sourceTree = "<group>"; };
 		DFA2636E28F8191C0038BE19 /* icons_normal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons_normal; path = "../../word-extension/src/icons_normal"; sourceTree = "<group>"; };
 		DFA2636F28F8191C0038BE19 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = manifest.json; path = "../../word-extension/src/manifest.json"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		DFB5E7D6285341630089862B = {
 			isa = PBXGroup;
 			children = (
+				DF24167E28FCFA8F00AC9C87 /* README.md */,
 				DFB5E7E1285341630089862B /* MetWord.extension */,
 				DFB5E800285341640089862B /* MetWord.extension Extension */,
 				DFB5E7E0285341630089862B /* Products */,
@@ -251,6 +254,7 @@
 				DFB5E7E9285341630089862B /* Icon.png in Resources */,
 				DFB5E7F2285341630089862B /* Main.storyboard in Resources */,
 				DFB5E7ED285341630089862B /* Script.js in Resources */,
+				DF24167F28FCFA8F00AC9C87 /* README.md in Resources */,
 				DFB5E7E7285341630089862B /* Main.html in Resources */,
 				DFB5E7F4285341640089862B /* Assets.xcassets in Resources */,
 				DFB5E7EB285341630089862B /* Style.css in Resources */,
@@ -439,8 +443,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "MetWord.extension Extension/MetWord_extension_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = QRN75VMQFS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MetWord.extension Extension/Info.plist";
@@ -452,12 +458,12 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metwords.MetWord-extension.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.metwords.MetWords.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -469,8 +475,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "MetWord.extension Extension/MetWord_extension_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = QRN75VMQFS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MetWord.extension Extension/Info.plist";
@@ -482,12 +490,12 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metwords.MetWord-extension.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.metwords.MetWords.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -502,13 +510,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MetWord.extension/MetWord.extension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = QRN75VMQFS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MetWord.extension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MetWord.extension;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -517,14 +528,14 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metwords.MetWord-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.metwords.MetWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -538,13 +549,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MetWord.extension/MetWord.extension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = QRN75VMQFS;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MetWord.extension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MetWord.extension;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -553,14 +567,14 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.metwords.MetWord-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.metwords.MetWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
